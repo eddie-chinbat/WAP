@@ -59,3 +59,7 @@ footer{
 ul{
     list-style-image: url("../images/pie_icon.gif");
 }
+
+.sub{
+    list-style-type: none;
+}
