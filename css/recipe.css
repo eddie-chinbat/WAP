@@ -14,7 +14,7 @@ h1{
     display: inline;
 }
 
-h2{
+h2 p{
     letter-spacing: 0.25em;
     color: #A4A400;
     font-weight: normal;
