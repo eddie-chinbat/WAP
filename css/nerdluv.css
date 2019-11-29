@@ -18,7 +18,7 @@ legend{
     border-width: 2px;
 }
 
-span{
+.type{
     color: red;
 }
 span.copyright{
@@ -43,7 +43,8 @@ td:first-child{
     font-weight: bold ;
 }
 .small{
-    width: 95px;
+    /* width: 70px; */
+    color: lightgrey;
 }
 
 .back{
