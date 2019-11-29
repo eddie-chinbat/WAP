@@ -3,14 +3,10 @@ body{
 }
 form{
     width: 500px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* margin-top: 150px; */
     font-size: 18px;
 }
 
 fieldset{
-    /* border-color: #F8F8F8; */
     border-radius: 8px;
     border-style: outset;
     background-color: #e0e0ff;
@@ -20,7 +16,6 @@ legend{
     background-color: white;
     border-style: outset;
     border-width: 2px;
-    /* border-color: black */
 }
 
 span{
@@ -45,7 +40,6 @@ input{
 }
 
 td:first-child{
-    /* width: 150px; */
     font-weight: bold ;
 }
 .small{
