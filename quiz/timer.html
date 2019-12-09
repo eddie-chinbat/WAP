@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Timer exercises</title>
+        <style>
+            answer{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Javascript Exercises</h1>
+        <ol>
+            <li>What is the difference between the following 2 statements?</li>
+            <pre>setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+            </pre>
+            <answer>
+                <code>setTimeout(booyah, 2000);</code> is calling boohay function after 2000ms.<br>
+                <code>setTimeout(booyah(), 2000);</code> is calling boohay function immediately without waiting 2000ms. <br><br>
+            </answer>
+            <li>What do the following 2 alerts display (answer without running the code)?</li>
+            <pre>
+var myfunc = function(a, x) {
+    return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3));
+            </pre>
+
+            <answer>
+                <code>6 will print in alert twice.<br><br>
+            </answer>
+
+            <li>Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!”</li>
+            <pre>setTimeout(booyah1, 2000); 
+setTimeout(booyah2(), 2000);
+            </pre>
+            <answer>
+                <pre>function delayMsg(){
+    setTimeout(booyah1, 2000);
+    setTimeout(booyah2(), 2000);
+}
+function booyah1(){
+    alert("BOOYAH!");
+}
+
+function booyah2(){
+    alert("BOOYAH!");
+}</pre>
+            </answer>
+
+            <li>What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?</li>
+            <answer>Unobtrusive Javascript is a general approach to write Javascript code in web page. 
+                The main idea is not writing javascript code in html. 
+                And the reason we use Unobtrusive Javascript is to run our code without any problem on client side. 
+                Because user browser may ignore my javascript completely because they don't support Javascript like old style 
+                and Even browser can support users may turn it off for security reason etc.,</answer>
+        </ol>
+    </body>
+</html>
