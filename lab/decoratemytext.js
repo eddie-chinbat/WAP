@@ -36,10 +36,19 @@ function biggerDecorationWithTimer(){
 }
 
 function lgpay(){
-    var plain = text.value;
-    plain.split(" ");
-    if(plain == " ")
-        console.log("xooson : " + plain);
-    else
-        console.log("usegtei : " + plain);
+    var vowels = ["a","e","i","o","u"];
+    var word = text.value.replace(/  /g,'').split(" ");
+    
+    for(let i=0; i<word.length; i++)
+    {
+        if(vowels.indexOf(word[i].charAt(0).toLowerCase()) != 0){
+            word[i].remove(0);
+            console.log(word[i]);
+        }
+    }
+    // if(word.substring())
+    // if(plain == " ")
+    //     console.log("xooson : " + plain);
+    // else
+    //     console.log("usegtei : " + plain);
 }
