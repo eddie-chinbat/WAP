@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Bin</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                var b = 1000;
+                function g(){
+                    var a = 100;
+                    b = 10;
+                    var z = a + b;
+                    alert("z : " + z);   // 1100
+                    function f(z){
+                        return 2 * z;
+                    }
+                    var b = 20;
+                    alert("f(b) : " + f(b));  // 40
+                }
+                g();
+                alert("b : " + b);
+            });
+
+            //     function Data(){
+            //         var x = [];
+            //         return {
+            //             put: function(item){
+            //                 x.push(item);
+            //             },
+            //             take: function(){
+            //                 return x.pop();
+            //             },
+            //             size: function(){
+            //                 return x.length;
+            //             },
+            //             remain: function() {
+            //                 return x[1];
+            //             }
+            //         }
+            //     }
+
+            //     y = Data();
+            //     y.put(10);
+            //     y.put(-15);
+
+            //     alert(y.size());
+            //     alert(y.take());
+            //     alert(y.remain());
+            //     alert(y.size());
+            // });
+
+
+            // $(document).ready(function(){
+            //     Employee = function(){
+            //         theEmp = {
+            //             name: "",
+            //             salary: 0
+            //         };
+
+            //         getSalary = function(){
+            //             return theEmp.salary;
+            //         }
+
+            //         setSalary = function(aSalary){
+            //             theEmp.salary = aSalary;
+            //         }
+
+            //         giveRaise = function(amount){
+            //             setSalary(getSalary() + amount);
+            //         }
+
+            //         theEmp.giveRaise = function(num){
+            //             giveRaise(num);
+            //         }
+
+            //         return theEmp;
+            //     }
+
+            //     aEmp = Employee();
+            //     aEmp.name = "Edy";
+            //     aEmp.salary = 15000;
+            //     aEmp.giveRaise(1000);
+
+            //     alert(aEmp.name+ " : " + aEmp.giveRaise(1000));
+            //     alert(aEmp.name+ " : " + aEmp.salary);
+            // });
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li>Short1 <button>Delete</button></li>
+            <li>Short2 <button>Delete</button></li>
+            <li>Short3 <button>Delete</button></li>
+            <li>Short4 <button>Delete</button></li>
+        </ul>
+    </body>
+</html>
